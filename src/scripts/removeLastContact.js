@@ -5,6 +5,7 @@ const removeLastContact = async () => {
   const contacts = await readContacts();
   contacts.pop();
   await writeContacts(contacts);
+  console.log('Last contact was deleted');
 };
 
 removeLastContact();
